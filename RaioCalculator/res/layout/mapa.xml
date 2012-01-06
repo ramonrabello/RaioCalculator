@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout1"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/fundo_gradiente_app"
+	android:orientation="vertical" >
+	
+	<include
+		android:id="@+id/include1"
+		layout="@layout/cabecalho" />
+		<TextView
+		style="@style/textoEscuro"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/fundo_texto_app"
+		android:text="Veja no mapa, a área em que o raio acabou de cair: " />
+		<com.google.android.maps.MapView
+		android:id="@+id/mapa"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="5dp"
+		android:apiKey="0ZpNxEu8Y9UpQQZaq4OYH4vWV-ik20LCClpi-rQ"
+		android:clickable="true" />
+		
+</LinearLayout>

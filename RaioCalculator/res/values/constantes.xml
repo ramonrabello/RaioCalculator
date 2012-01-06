@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Raio Calculator</string>
+    <string name="texto_distancia_raio_longe">Ufa! O raio caiu à %s m longe de você! :)</string>
+    <string name="texto_distancia_raio_perto">Ops! O raio caiu à %s m perto de você! :(</string>
+    <string name="texto_quando_cair_raio">Clique na nuvenzinha quando perceber o raio.</string>
+    <string name="texto_quando_ouvir_trovao">Agora clique novamente quando ouvir o trovão!</string>
+    <integer name="velocidade_som_no_ar">348</integer>
+    <integer name="intervalo_raio_trovao">3</integer>
+</resources>

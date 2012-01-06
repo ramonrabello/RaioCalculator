@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout1"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/fundo_gradiente_cabecalho"
+	android:orientation="vertical" >
+	
+	<TextView
+		style="@style/textoClaro"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="3dip"
+		android:text="@string/app_name" />
+	
+	<!-- 
+	<LinearLayout
+		android:id="@+id/layoutBotoes"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_alignParentRight="true" >
+		
+		<Button
+			android:id="@+id/botaoAjuda"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:drawable/ic_dialog_map"
+			android:enabled="false"
+			android:clickable="false" />
+		
+		<Button
+			android:id="@+id/botaoTwitter"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/botao_twitter"
+			android:enabled="false"
+			android:clickable="false" />
+		
+		<Button
+			android:id="@+id/botaoFacebook"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/botao_facebook"
+			android:enabled="false"
+			android:clickable="false" />
+		
+	</LinearLayout>
+	 -->
+
+	
+
+</RelativeLayout>

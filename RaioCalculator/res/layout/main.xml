@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/fundo_gradiente_app"
+	android:gravity="center_horizontal"
+	android:orientation="vertical" >
+	<include
+		android:id="@+id/include1"
+		android:layout_alignParentTop="true"
+		layout="@layout/cabecalho" />
+	<ToggleButton
+		android:id="@+id/botaoCalculo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="@drawable/transicao_botao"
+		android:onClick="calcularDistanciaDoTrovao"
+		android:textOff=""
+		android:textOn="" />
+	<TextView
+		android:id="@+id/textoDistancia"
+		style="@style/textoCalculoRaio"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:background="@drawable/fundo_texto_app"
+		android:gravity="center"
+		android:text="@string/texto_quando_cair_raio" />
+	<LinearLayout
+		android:id="@+id/layoutCronometro"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="59dp" >
+		<Chronometer
+			android:id="@+id/chronometer1"
+			style="@style/textoCronometro"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="10dp"
+			android:gravity="center" />
+	</LinearLayout>
+	<Button
+		android:id="@+id/botaoMapa"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/textoDistancia"
+		android:layout_alignRight="@+id/textoDistancia"
+		android:layout_marginBottom="3dp"
+		android:layout_marginRight="3dp"
+		android:background="@drawable/botao_mapa"
+		android:onClick="exibirLocalDoRaioNoMapa"
+		android:visibility="invisible" />
+</RelativeLayout>
